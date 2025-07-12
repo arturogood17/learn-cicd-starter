@@ -18,5 +18,5 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v1
 
-            - name: Force Failure
-              run: go version
+            - name: Unit tests
+              run: go test ./...
